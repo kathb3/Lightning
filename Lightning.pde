@@ -41,9 +41,11 @@ void mousePressed(){
 void voldemort(){
   noStroke();
   //legs
-  
+  fill(255,255,255);
+  rect(17,250,17,60);
+  rect(36,250,17,60);
   //body
-  
+  triangle(13,300,36,220,58,300);
   //arms
   
   //ears
