@@ -1,7 +1,7 @@
-int startX = 25;
-int startY = 250;
-int endX = 0;
-int endY = 250;
+int startX = 90;
+int startY = 278;
+int endX = 90;
+int endY = 278;
 
 void setup(){
   size(500,500);
@@ -12,6 +12,9 @@ void setup(){
 
 void draw(){
   voldemort();
+  fill(0);
+  textSize(20);
+  text("oops ur dead\nclick again",300,250);
   noStroke();
   fill(76, 80, 58);
   
@@ -32,22 +35,27 @@ void draw(){
   }
 }
 void mousePressed(){
-  startX = 25;
-  startY = 250;
-  endX = 0;
-  endY = 250;
+  startX = 90;
+  startY = 278;
+  endX = 90;
+  endY = 278;
 }
 
 void voldemort(){
+  //wand
+  stroke(128,128,128);
+  fill(0);
+  ellipse(70,278,40,3);
   noStroke();
   //legs
-  fill(255,255,255);
+  fill(0);
   rect(17,250,17,60);
   rect(36,250,17,60);
   //body
   triangle(13,300,36,220,58,300);
   //arms
-  
+  rect(14,258,9,25);
+  rect(48,257,9,25);
   //ears
   fill(222,217,215);
   ellipse(7,238,10,10);
@@ -62,7 +70,8 @@ void voldemort(){
   ellipse(52,234,10,10);
   //undereyes
   stroke(176,167,168);
-  
+  line(30,242,35,241);
+  line(50,240,54,240);
   //no nose to see here
   line(39,242,43,247);
   line(48,241,46,245);
@@ -73,5 +82,4 @@ void voldemort(){
   stroke(222,217,215);
   fill(222,217,215);
   triangle(42,253,44,253,52,252);
-  
 }
