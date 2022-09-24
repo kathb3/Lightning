@@ -14,7 +14,7 @@ void draw(){
   voldemort();
   fill(0);
   textSize(20);
-  text("oops ur dead\nclick again",300,250);
+  text("oops ur dead\nclick",300,250);
   noStroke();
   fill(76, 80, 58);
   
